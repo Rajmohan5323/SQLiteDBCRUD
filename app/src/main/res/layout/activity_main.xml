@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student Details"
+        android:id="@+id/tv1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="30dp"
+        android:id="@+id/et1"
+        android:hint="Enter rollno"
+        android:layout_below="@+id/tv1"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginHorizontal="30dp"
+        android:id="@+id/et2"
+        android:hint="Enter entername"
+        android:layout_below="@id/et1"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginHorizontal="30dp"
+        android:id="@+id/et3"
+        android:hint="Enter dept"
+        android:layout_below="@id/et2"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insert"
+        android:onClick="onInsert"
+        android:id="@+id/b1"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/et3"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:onClick="onUpdate"
+        android:id="@+id/b2"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/b1"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Read"
+        android:onClick="onRead"
+        android:id="@+id/b3"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/b2"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:onClick="onDelete"
+        android:id="@+id/b4"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/b3"
+        />
+
+
+
+</RelativeLayout>
